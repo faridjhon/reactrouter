@@ -1,4 +1,4 @@
-import { faDirections } from '@fortawesome/free-solid-svg-icons';
+import { faDirections, faGrinTongue, faMicrophone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
 import { Card } from 'react-bootstrap';
@@ -73,13 +73,17 @@ const Teamdetails = () => {
                     </div>
                 </div>
             </div>
-            <div className="row mt-5 bg-info">
+            <div className="row mt-5 bg-dark">
                 <div className="col text-center">
                     <div>
-                    <p><FontAwesomeIcon icon={faDirections} /></p>
+                    <p></p>
                     
                     
-                    {/* <a href={`https://${strFacebook}`} target="_blank">Facebook</a> */}
+                     <a href="https://wwww.facebook.com" target="_blank"><FontAwesomeIcon icon={faDirections} />  Facebook  </a> 
+                     <a href="https://wwww.youtube.com" target="_blank"><FontAwesomeIcon icon={faGrinTongue} />  Youtube  </a> 
+                     <a href="https://wwww.microsoft.com" target="_blank"><FontAwesomeIcon icon={faMicrophone} />  Microsoft  </a> 
+
+                     
                     </div>
                 </div>
             </div>
