@@ -79,9 +79,9 @@ const Teamdetails = () => {
                     <p></p>
                     
                     
-                     <a href="https://wwww.facebook.com" target="_blank"><FontAwesomeIcon icon={faDirections} />  Facebook  </a> 
-                     <a href="https://wwww.youtube.com" target="_blank"><FontAwesomeIcon icon={faGrinTongue} />  Youtube  </a> 
-                     <a href="https://wwww.microsoft.com" target="_blank"><FontAwesomeIcon icon={faMicrophone} />  Microsoft  </a> 
+                     <a href="https://wwww.facebook.com"  ><FontAwesomeIcon icon={faDirections} />  Facebook  </a> 
+                     <a href="https://wwww.youtube.com" ><FontAwesomeIcon icon={faGrinTongue} />  Youtube  </a> 
+                     <a href="https://wwww.microsoft.com" ><FontAwesomeIcon icon={faMicrophone} />  Microsoft  </a> 
 
                      
                     </div>

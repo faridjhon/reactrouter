@@ -1,8 +1,8 @@
 import { faDirections } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import { Card,Button, Image } from 'react-bootstrap';
-import { Link, useHistory } from 'react-router-dom';
+import { Card,Button } from 'react-bootstrap';
+import { useHistory } from 'react-router-dom';
 import './Team.css';
 
 
