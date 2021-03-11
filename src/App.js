@@ -8,14 +8,17 @@ import {
   Route,
   Link
 } from "react-router-dom";
+
 import Home from './Components/Home';
 import NoMatch from './Components/NoMatch';
 import Teamdetails from './Components/Teamdetails';
 
 
 
+
 function App() {
   return (
+     
         <Router>
           <Switch>
              <Route path="/home">
@@ -30,9 +33,8 @@ function App() {
              <Route path="*">
                 <NoMatch/>
              </Route>
-             <Route>
-                <Home/>
-             </Route>
+             
+             
           </Switch>
             
         </Router>

@@ -1,5 +1,12 @@
+import { faDirections } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
+import { Card } from 'react-bootstrap';
 import { useParams } from 'react-router';
+
+
+
+
 
 const Teamdetails = () => {
 
@@ -16,44 +23,68 @@ const Teamdetails = () => {
         fetch(url)
             .then(res => res.json())
             .then(data => setTeam(data.teams[0]));
-    }, [])
+    }, [idTeam])
 
 
     return (
         <div >
             <div className="row bg-info text-center">
-                <div className="col">
-                <img src={team.strTeamLogo} alt="" />
-                </div>
-                
-            </div>
-            <div className="container ">
-            <div className="row mt-5">
-                <div className="col-md-6">
-                    <h4>{team.strAlternate}</h4>
-                    <p>Founded :{team.intFormedYear}</p>
-                    <p>Country Name :{team.strCountry}</p>
-                    <p>Sport Type :{team.strSport}</p>
-                    <p>Gender :{team.strGender}</p>
+                <div className="col-md-12">
 
-                </div>
-                <div className="col-md-6 ">
                     <img src={team.strTeamBadge} alt="" />
-                    
-                    <img src={team.strTeamLogo} alt="" />
-                                        
                 </div>
 
             </div>
+            <div className="container  ">
+                <div className="row  ">
+                    <div className="col-md-6">
 
-            <div className="row mt-5">
-                <div className="col text-center">
-                <p>Sport Type :{team.strDescriptionEN}</p>
+                        <Card style={{ width: '18rem' }}>
+                            <Card.Body>
+                                <h4>{team.strAlternate}</h4>
+                                <p>Founded :{team.intFormedYear}</p>
+                                <p>Country Name :{team.strCountry}</p>
+                                <p>Sport Type :{team.strSport}</p>
+                                <p>Gender :{team.strGender}</p>
+
+                            </Card.Body>
+                        </Card>
+
+                    </div>
+                    <div className="col-md-6 ">
+
+                        <Card style={{ width: '18rem' }}>
+                            <Card.Img variant="top" src={team.strTeamBadge} />
+                            <Card.Body>
+
+
+                            </Card.Body>
+                        </Card>
+
+
+
+                    </div>
+
                 </div>
+
+                <div className="row mt-5 bg-info">
+                    <div className="col text-center">
+                        <p>Sport Type :{team.strDescriptionEN}</p>
+                    </div>
+                </div>
+            </div>
+            <div className="row mt-5 bg-info">
+                <div className="col text-center">
+                    <div>
+                    <p><FontAwesomeIcon icon={faDirections} /></p>
+                    
+                    
+                    {/* <a href={`https://${strFacebook}`} target="_blank">Facebook</a> */}
+                    </div>
                 </div>
             </div>
             <div>
-                <a href="http://www.facebook.com"></a>
+
             </div>
 
 

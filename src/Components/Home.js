@@ -1,5 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import Team from './Team';
+import './Home.css';
+
+import bannerImage from '../Image/banner.jpg';
+
+
+
+
+
+
+
 
 const Home = () => {
 
@@ -18,20 +28,25 @@ const Home = () => {
     },[])
 
 
-
     return (
-        <div className="text-center">
-            <h1>Home page</h1>
-            <h2>Team : {teams.length}</h2>
-            <div>
-               {
+        
+            
+            <div >
+                <div>
+                    <img className=" img-fluid"style={{ width: '100rem' }} src={bannerImage} alt=""/>
+
+                </div>
+                <div className="mapstyle container mt-2">
+                {
                 teams.map(team => <Team team={team}> </Team>)
                 }
+                </div>
+               
             </div>
            
                 
            
-        </div>
+        
     );
 };
 
